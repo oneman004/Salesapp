@@ -1,7 +1,8 @@
 # app/demo_run.py
 from .orchestrator import orchestrator
+from fastapi import FastAPI
 import uuid
-
+app = FastAPI()
 def run_demo():
     cart = [{"sku":"TSHIRT-RED-XL","qty":1,"price":799}]
     customer_id = "cust_001"

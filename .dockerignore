@@ -1,0 +1,20 @@
+# .dockerignore
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+.env
+.venv
+node_modules
+npm-debug.log
+dist
+build
+.next
+.git
+.gitignore
+pytest_cache
+.DS_Store
+.vscode
+*.egg-info

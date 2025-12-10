@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: salesapp_api
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+    networks:
+      - salesnet
+
+  web:
+    build:
+      context: ./web-app
+      dockerfile: Dockerfile
+    container_name: salesapp_web
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+    environment:
+      NEXT_PUBLIC_API_URL: "http://localhost:8000"
+    networks:
+      - salesnet
+
+networks:
+  salesnet:
+    driver: bridge
