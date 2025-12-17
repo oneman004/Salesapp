@@ -4,11 +4,9 @@
   "/api/mock/inventory/route": "app/api/mock/inventory/route.js",
   "/api/mock/loyalty/route": "app/api/mock/loyalty/route.js",
   "/api/mock/payment/route": "app/api/mock/payment/route.js",
-  "/api/mock/products/route": "app/api/mock/products/route.js",
   "/api/mock/recommend/route": "app/api/mock/recommend/route.js",
   "/chat/page": "app/chat/page.js",
   "/checkout/page": "app/checkout/page.js",
   "/dev-console/page": "app/dev-console/page.js",
-  "/page": "app/page.js",
-  "/products/page": "app/products/page.js"
+  "/page": "app/page.js"
 }
